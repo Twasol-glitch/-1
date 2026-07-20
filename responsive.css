@@ -1,0 +1,61 @@
+/* للأجهزة اللوحية */
+@media (max-width:768px){
+
+.login-box{
+    width:90%;
+    padding:25px;
+}
+
+#title{
+    font-size:28px;
+}
+
+#loginText{
+    font-size:24px;
+}
+
+input{
+    font-size:15px;
+    padding:11px;
+}
+
+#loginBtn{
+    font-size:15px;
+}
+
+}
+
+
+/* للهواتف */
+@media (max-width:480px){
+
+.login-box{
+    width:95%;
+    padding:20px;
+    border-radius:10px;
+}
+
+#title{
+    font-size:24px;
+}
+
+#loginText{
+    font-size:20px;
+}
+
+input{
+    padding:10px;
+    font-size:14px;
+}
+
+#loginBtn{
+    padding:10px;
+    font-size:14px;
+}
+
+#langBtn{
+    width:100%;
+    margin-bottom:15px;
+}
+
+}

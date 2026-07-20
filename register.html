@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review | Register</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1 id="title">📚 Book Review</h1>
+
+    <button id="langBtn">🌐 العربية | English</button>
+
+    <h2 id="registerTitle">إنشاء حساب</h2>
+
+    <form id="registerForm">
+
+        <input type="text" id="name" placeholder="الاسم الكامل" required>
+
+        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+
+        <input type="password" id="password" placeholder="كلمة المرور" required>
+
+        <input type="password" id="confirmPassword" placeholder="تأكيد كلمة المرور" required>
+
+        <button type="submit" id="registerBtn">
+            إنشاء حساب
+        </button>
+
+    </form>
+
+    <p id="loginText">
+        لديك حساب بالفعل؟
+        <a href="login.html">تسجيل الدخول</a>
+    </p>
+
+</div>
+
+<script>
+let arabic = true;
+
+document.getElementById("langBtn").onclick = function(){
+
+if(arabic){
+
+document.documentElement.lang="en";
+document.documentElement.dir="ltr";
+
+document.getElementById("registerTitle").innerHTML="Register";
+document.getElementById("name").placeholder="Full Name";
+document.getElementById("email").placeholder="Email";
+document.getElementById("password").placeholder="Password";
+document.getElementById("confirmPassword").placeholder="Confirm Password";
+document.getElementById("registerBtn").innerHTML="Register";
+
+document.getElementById("loginText").innerHTML=
+`Already have an account?
+<a href="login.html">Login</a>`;
+
+document.getElementById("langBtn").innerHTML="العربية";
+
+arabic=false;
+
+}else{
+
+document.documentElement.lang="ar";
+document.documentElement.dir="rtl";
+
+document.getElementById("registerTitle").innerHTML="إنشاء حساب";
+document.getElementById("name").placeholder="الاسم الكامل";
+document.getElementById("email").placeholder="البريد الإلكتروني";
+document.getElementById("password").placeholder="كلمة المرور";
+document.getElementById("confirmPassword").placeholder="تأكيد كلمة المرور";
+document.getElementById("registerBtn").innerHTML="إنشاء حساب";
+
+document.getElementById("loginText").innerHTML=
+`لديك حساب بالفعل؟
+<a href="login.html">تسجيل الدخول</a>`;
+
+document.getElementById("langBtn").innerHTML="English";
+
+arabic=true;
+
+}
+
+}
+<script src="script.js"></script><img src="" alt="">
+</script>
+
+</body>
+</html>
