@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Review | Add Review</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+📚 Book Review
+
+</div>
+
+<nav>
+
+<a href="home.html">الرئيسية</a>
+
+<a href="books.html">الكتب</a>
+
+<a href="review.html" class="active">التقييمات</a>
+
+<a href="profile.html">حسابي</a>
+
+<a href="index.html">تسجيل الخروج</a>
+
+</nav>
+
+</header>
+
+<section class="review-container">
+
+<h1>إضافة تقييم</h1>
+
+<form id="reviewForm">
+
+<label>اسم الكتاب</label>
+
+<select id="book">
+
+<option>الخيميائي</option>
+
+<option>فن اللامبالاة</option>
+
+<option>العادات الذرية</option>
+
+<option>الأب الغني والأب الفقير</option>
+
+<option>ابدأ لماذا</option>
+
+</select>
+
+<label>التقييم</label>
+
+<div class="stars">
+
+<span onclick="rate(1)">⭐</span>
+
+<span onclick="rate(2)">⭐</span>
+
+<span onclick="rate(3)">⭐</span>
+
+<span onclick="rate(4)">⭐</span>
+
+<span onclick="rate(5)">⭐</span>
+
+</div>
+
+<input type="hidden" id="rating" value="0">
+
+<label>اكتب رأيك</label>
+
+<textarea
+id="comment"
+rows="6"
+placeholder="اكتب تقييمك هنا..."
+required></textarea>
+
+<button type="submit">
+
+إرسال التقييم
+
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Book Review
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

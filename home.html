@@ -1,118 +1,144 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Review</title>
+    <title>Book Review | Home</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
 <header>
 
-    <h1>📚 Book Review</h1>
+    <div class="logo">
+        📚 Book Review
+    </div>
 
-    
+    <nav>
 
-        
+        <a href="home.html">الرئيسية</a>
 
-    
-<nav>
+        <a href="books.html">الكتب</a>
 
-<a href="home.html">الرئيسية</a>
+        <a href="review.html">التقييمات</a>
 
-<a href="add-review.html">إضافة تقييم</a>
+        <a href="profile.html">حسابي</a>
 
-<a href="reviews.html">التقييمات</a>
+        <a href="index.html">تسجيل الخروج</a>
 
-<a href="about.html">حول</a>
-
-<a href="#" onclick="logout()">تسجيل الخروج</a>
-
-
-<button id="langBtn" onclick="changeLanguage()">
-🌐 English
-</button>
-
-</nav>
-<a class="home" href="home.html">الرئيسية</a>
-
-<a class="add" href="add-review.html">إضافة تقييم</a>
-
-<a class="reviews" href="reviews.html">التقييمات</a>
-
-<a class="about" href="about.html">حول</a>
-
-<a class="logout" href="login.html">تسجيل
- <a href="#" onclick="logout()">
-تسجيل الخروج
-</a>
-
-<button id="langBtn" onclick="changeLanguage()">
-🌐 English
-</button>
-
-</nav>
-    
-    
+    </nav>
 
 </header>
 
 <section class="hero">
 
-    <h2>مرحباً بك في موقع تقييم الكتب</h2>
+<h1>مرحباً بك في موقع تقييم الكتب</h1>
 
-    <p>
-        ابحث عن كتاب، اقرأ تقييمات الآخرين،
-        وأضف تقييمك الخاص.
-    </p>
+<p>
 
-    <input
-        type="text"
-        placeholder="🔍 ابحث عن كتاب">
+اقرأ الكتب، أضف تقييمك، وشارك رأيك مع الآخرين.
+
+</p>
+
+</section>
+
+<section class="search">
+
+<input
+type="text"
+id="searchInput"
+placeholder="ابحث عن كتاب...">
+
+<button onclick="searchBook()">
+
+<i class="fa fa-search"></i>
+
+بحث
+
+</button>
 
 </section>
 
 <section class="books">
 
-    <div class="card">
+<div class="book-card">
 
-        <h3>📖 البرمجة بلغة HTML</h3>
+<img src="https://via.placeholder.com/200x280?text=Book+1">
 
-        <p>⭐⭐⭐⭐⭐</p>
+<h3>رواية الخيميائي</h3>
 
-        <p>كتاب ممتاز للمبتدئين.</p>
+<p>Paulo Coelho</p>
 
-    </div>
+<a href="book.html">
 
-    <div class="card">
+<button>
 
-        <h3>📘 تعلم JavaScript</h3>
+عرض التفاصيل
 
-        <p>⭐⭐⭐⭐</p>
+</button>
 
-        <p>شرح جميل مع أمثلة عملية.</p>
+</a>
 
-    </div>
+</div>
 
-    <div class="card">
+<div class="book-card">
 
-        <h3>📗 CSS للمبتدئين</h3>
+<img src="https://via.placeholder.com/200x280?text=Book+2">
 
-        <p>⭐⭐⭐⭐⭐</p>
+<h3>الأب الغني والأب الفقير</h3>
 
-        <p>أفضل كتاب لتصميم صفحات الويب.</p>
+<p>Robert Kiyosaki</p>
 
-    </div>
+<a href="book.html">
+
+<button>
+
+عرض التفاصيل
+
+</button>
+
+</a>
+
+</div>
+
+<div class="book-card">
+
+<img src="https://via.placeholder.com/200x280?text=Book+3">
+
+<h3>فن اللامبالاة</h3>
+
+<p>Mark Manson</p>
+
+<a href="book.html">
+
+<button>
+
+عرض التفاصيل
+
+</button>
+
+</a>
+
+</div>
 
 </section>
+
+<footer>
+
+<p>
+
+© 2026 Book Review
+
+</p>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
